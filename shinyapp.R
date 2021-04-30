@@ -1,7 +1,17 @@
 
 # install.packages("shiny")
+library(knitr)
+library(dplyr)
+library(plyr)
+library(tidyr)
+library(tidymodels)
+library(readr)
+library(ggplot2)
+library(stringr)
+library(tidytext)
+library(lme4)
+library(gridExtra)
 library(shiny)
-
 
 data = read.csv("bodyimagerawdata.csv")
 data = data %>% na_if("")
